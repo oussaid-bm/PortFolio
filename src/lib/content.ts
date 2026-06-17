@@ -97,7 +97,7 @@ export const caseStudy: CaseStudy = {
     "Socket.io",
     "WebRTC",
     "ICE / STUN",
-    "SQLite",
+    "MySQL",
     "Docker",
   ],
   context:
@@ -117,7 +117,7 @@ export const caseStudy: CaseStudy = {
     },
     {
       heading: "Authentification, données et déploiement",
-      body: "Gestion de l'authentification des utilisateurs, persistance des données en SQLite, et conteneurisation complète avec Docker pour un déploiement reproductible. Code versionné et hébergé sur GitHub, en équipe de 4.",
+      body: "Gestion de l'authentification des utilisateurs, persistance des données en MySQL, et conteneurisation complète avec Docker pour un déploiement reproductible. Code versionné et hébergé sur GitHub, en équipe de 4.",
     },
   ],
   highlights: [

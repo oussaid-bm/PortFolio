@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useMotionValueEvent, useScroll } from "motion/react";
 import { useState } from "react";
 import { navLinks, profile } from "@/lib/content";
@@ -26,10 +27,17 @@ export function Navbar() {
       >
         <a
           href="#accueil"
-          className="font-display text-lg font-bold tracking-tight"
+          aria-label={`${profile.name} — accueil`}
+          className="flex items-center transition-opacity hover:opacity-80"
         >
-          {profile.name.split(" ")[0]}
-          <span className="text-accent">.</span>
+          <Image
+            src="/logog.png"
+            alt={profile.name}
+            width={3840}
+            height={2160}
+            priority
+            className="h-9 w-auto object-contain"
+          />
         </a>
 
         <div className="hidden items-center gap-1 sm:flex">

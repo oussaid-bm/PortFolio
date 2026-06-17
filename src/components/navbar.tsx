@@ -31,7 +31,7 @@ export function Navbar() {
           className="flex items-center transition-opacity hover:opacity-80"
         >
           <Image
-            src="/logog.png"
+            src={profile.logoUrl}
             alt={profile.name}
             width={3840}
             height={2160}

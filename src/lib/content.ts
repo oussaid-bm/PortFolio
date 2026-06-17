@@ -3,6 +3,9 @@
  * Modifie ces valeurs pour personnaliser le site — tout le reste s'adapte.
  */
 
+// Préfixe d'URL pour les assets statiques (vide en local, /PortFolio en prod GitHub Pages).
+const basePath = process.env.NODE_ENV === "production" ? "/PortFolio" : "";
+
 export const profile = {
   name: "Oussaid Ben Mansour",
   role: "Étudiant en Systèmes Informatiques · Dev Web & Réseaux",
@@ -14,7 +17,8 @@ export const profile = {
     "Étudiant en Licence Informatique, spécialité Systèmes. Entre développement web temps réel, réseaux et sécurité — je conçois des applications pensées pour des conditions réelles.",
   email: "benmansouroussaid361@gmail.com",
   phone: "+213 796 26 84 47",
-  cvUrl: "/cv.pdf",
+  cvUrl: `${basePath}/cv.pdf`,
+  logoUrl: `${basePath}/logog.png`,
   socials: {
     github: "https://github.com/oussaid-bm",
     linkedin: "https://www.linkedin.com/in/oussaid-ben-mansour-7b7842394/",
